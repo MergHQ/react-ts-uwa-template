@@ -1,6 +1,6 @@
 import React from 'react'
 import { Timetable } from '../services/hslService'
-import { TimetableComponent } from './Timetable';
+import { TimetableComponent } from './Timetable'
 
 interface Props {
   initialState: {
