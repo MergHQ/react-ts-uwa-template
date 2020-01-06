@@ -17,11 +17,12 @@
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "nodemon": "^2.0.2"
   },
   "scripts": {
     "start": "yarn styles && webpack --env.platform=web && webpack --env.platform=server && node ./dist/js/server",
-    "watch": "nodemon",
+    "watch": "yarn nodemon",
     "styles": "node-sass public/styles/main.scss -o dist/css/",
     "build-web": "yarn styles && webpack --env.platform=web",
     "build-server": "webpack --env.platform=server"
